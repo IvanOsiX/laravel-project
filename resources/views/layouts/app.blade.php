@@ -16,6 +16,7 @@
             <nav class="space-x-4">
                 <a href="{{ route('signin') }}" class="text-gray-600 hover:text-gray-900">Регистрация</a>
                 <a href="{{ route('home') }}" class="text-gray-600 hover:text-gray-900">Главная</a>
+                <a href="{{ route('articles.index') }}" class="text-gray-600 hover:text-gray-900">Статьи</a>
                 <a href="{{ route('about') }}" class="text-gray-600 hover:text-gray-900">О нас</a>
                 <a href="{{ route('contacts') }}" class="text-gray-600 hover:text-gray-900">Контакты</a>
             </nav>

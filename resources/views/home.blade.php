@@ -25,6 +25,9 @@
                     </div>
                 </div>
             @endforeach
+            <div class="mt-6">
+                {{ $articles->links() }}
+            </div>
         </div>
     </div>
 @endsection
