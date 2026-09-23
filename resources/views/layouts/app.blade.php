@@ -12,8 +12,9 @@
     <!-- Header -->
     <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-900">Мой Сайт</h1>
+            <h1 class="text-2xl font-bold text-gray-900">Новости</h1>
             <nav class="space-x-4">
+                <a href="{{ route('signin') }}" class="text-gray-600 hover:text-gray-900">Регистрация</a>
                 <a href="{{ route('home') }}" class="text-gray-600 hover:text-gray-900">Главная</a>
                 <a href="{{ route('about') }}" class="text-gray-600 hover:text-gray-900">О нас</a>
                 <a href="{{ route('contacts') }}" class="text-gray-600 hover:text-gray-900">Контакты</a>
