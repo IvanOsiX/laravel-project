@@ -2,23 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    // Метод для главной страницы
+    // Главная страница со списком новостей
     public function index()
-    {        
-        $jsonPath = public_path('articles.json');
-                
-        $jsonContent = file_get_contents($jsonPath);
-                
-        $articles = json_decode($jsonContent, true);
-        
+    {
+        $articles = Article::all();
         return view('home', compact('articles'));
     }
 
-    
+    // Страница галереи
     public function gallery($image)
     {
         return view('gallery', compact('image'));
